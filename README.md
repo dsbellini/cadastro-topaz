@@ -16,11 +16,7 @@ Seja bem-vindo ao **Sistema de Cadastro Topaz**, uma aplicação simples para ca
    ```bash
    git clone https://github.com/dsbellini/cadastro-topaz.git
 
-2. **Compile e execute a aplicação**: Para compilar e executar a aplicação, utilize o comando abaixo:
-```bash
-javac Main.java Menu.java Usuario.java
-java Main
-```
+2. **Acesse a classe Main e execute a aplicação**
 
 3. **Interaja com o menu**: O sistema exibirá um menu com as seguintes opções:
 - 1: Cadastrar usuário
