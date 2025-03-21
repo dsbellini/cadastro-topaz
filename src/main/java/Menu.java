@@ -72,10 +72,10 @@ public class Menu {
     do {
       System.out.print("Email: ");
       email = scanner.nextLine();
-      if (validarEmail(email)) {
+      if (isInvalidEmail(email)) {
         System.out.println("Email inválido! Digite um email válido no formato mail@mail.com");
       }
-    } while (validarEmail(email));
+    } while (isInvalidEmail(email));
 
     System.out.print("Idade: ");
     while (!scanner.hasNextInt()) {
@@ -178,7 +178,7 @@ public class Menu {
     }
   }
 
-  private static boolean validarEmail(String email) {
+  private static boolean isInvalidEmail(String email) {
     return !email.matches("^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\\.[a-zA-Z]{2,}$");
   }
 
